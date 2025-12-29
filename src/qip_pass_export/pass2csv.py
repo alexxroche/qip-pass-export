@@ -32,7 +32,7 @@ def main():
     parser.add_argument("-V", "--version",
                         action="version", version="%(prog)s " + __version__)
     parser.add_argument("passfiles",
-                        metavar="passfile", nargs=argparse.ONE_ORMORE, type=Path,
+                        metavar="passfile", nargs=argparse.ONE_OR_MORE, type=Path,
                         help="Password file(s) (*.gpg) to export")
     args = parser.parse_args()
 
